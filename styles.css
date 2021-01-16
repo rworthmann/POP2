@@ -1,0 +1,340 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+  color: #3C9940;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+}
+
+h2, h4, h5 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: left;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+}
+
+h6 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  color: #000;
+}
+
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+
+/* Headings */
+.big-heading {
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 2%;
+}
+
+.termsection-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 1%;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 1%;
+}
+
+/* Containers */
+
+.container-fluid {
+  background-color: #fff;
+}
+
+.container-home {
+  padding: 5% 0% 5%;
+}
+
+.container-fluid-nav {
+  background-color: #fff;
+  text-align: left;
+}
+
+.container {
+  margin: 0;
+  padding-top: 5%;
+}
+
+.text-container {
+  position: relative;
+  margin-left: 10%;
+  padding: 7% 10%;
+}
+
+.countdown {
+  position: relative;
+  margin-left: 10%;
+}
+
+.container-reg {
+  /* padding: 0% 5% 10%; */
+  /* margin: 0% 5%; */
+  /*text-align: center;*/
+}
+
+.container-foot {
+padding: 2% 15%;
+color: #fff;
+}
+
+.container-checkout {
+  padding: 10% 5%;
+}
+
+.py-5 {
+  padding: 0;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.paid {
+  padding-bottom: 5%;
+}
+
+.term {
+  color: #000;
+  text-align:  left;
+}
+
+.termlink {
+  text-decoration: underline;
+  color: blue;
+}
+
+.siteterms {
+  font-size: 0.5rem;
+  padding: 1%;
+  text-align: left;
+}
+
+/* Sections */
+#home {
+  background-image: url('images/pathway_forest.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#about-popi .container-reg {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/* Images */
+
+.logo {
+  margin-left: 20px;
+  height: 20%;
+  width: 20%;
+}
+
+.social-icon {
+  margin: 20px 10px;
+  /* padding: 0% 7%; */
+}
+
+.easy {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 5%;
+}
+
+.product {
+  width: 90%;
+  height: 90%;
+  padding: 0% 5%;
+}
+
+/* Navbar */
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 12px;
+  font-weight: 900;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.navbar-nav {
+  margin-left: 200px;
+}
+
+.colored-section {
+  background-color: #3C9940;
+  color: #fff;
+  padding-bottom: 2%;
+}
+
+.white-section {
+  background-color: #fff;
+  color: #000;
+  padding-bottom: 2%;
+}
+
+.footer-section {
+  background-color: #3C9940;
+}
+
+/* Countdown */
+
+.hsize1 {
+  min-height: 230px;
+}
+
+.s1-txt1 {
+  font-family: "Ubuntu";
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.l1-txt1 {
+  font-family: "Ubuntu";
+  font-size: 3rem;
+  line-height: 1;
+  color: #fff;
+}
+
+.size2 {
+  width: 90px;
+  height: 100px;
+}
+
+.how-countdown {
+  background-color: #333333;
+  border-radius: 10px;
+  margin: 0px 18px 25px 18px;
+}
+
+.p-b-9 {padding-bottom: 9px;}
+
+.flex-w,
+.flex-c,
+.flex-col-c-m {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.flex-w {
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flex-c {
+	justify-content: center;
+}
+
+.flex-col-c-m {
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-col-c-m {
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+/* Buttons */
+
+.btn {
+  width: 200px;
+  /* align: center; */
+  background-color: #3C9940;
+  color: #fff;
+}
+
+.btn-checkout {
+  width: 200px;
+  /* align: center; */
+  background-color: #3C9940;
+  color: #fff;
+}
+
+/* Text */
+
+.invalid-feedback {
+  color: "red";
+}
+
+.my-0 {
+  color: #8f8f8f;
+}
+
+.list-group-item {
+  text-align: left;
+}
+
+.text-left {
+  width: 10%;
+}
+
+.lh-condensed { line-height: 1.25; }
+
+@media (max-width: 1028px) {
+  #home {
+    text-align: center;
+    width: 100%;
+  }
+  .big-heading {
+    font-size: 1.5rem;
+  }
+
+}
