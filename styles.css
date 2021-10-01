@@ -16,19 +16,24 @@ h1 {
   font-size: 1.75em;
   font-weight: 800;
   padding: 20px;
-  color: #548235;
+  color: #000000;
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: 800;
-  color: #548235;
+  color: #000000;
 }
 
 h3 {
   font-size: 1.2em;
   font-weight: 400;
   margin: 10px 0;
+}
+
+.optionsplit {
+  margin-top: 15%;
+  padding-left: 4%;
 }
 
 strong {
@@ -42,6 +47,20 @@ small {
 input {
   font-family: Raleway;
   font-size: 1em;
+}
+
+i {
+  color: #CC0000;
+}
+
+p {
+  font-size: 12px;
+}
+
+.logo {
+  margin-left: 30%;
+  width: 30%;
+  height: 100%;
 }
 
 .mortgageCalculator {
@@ -146,11 +165,12 @@ input {
 /* CHECKED STYLES */
 .custom-checkbox > input:checked ~ .box,
 .custom-checkbox.checked > .box {
-  background: #d9d9d9;
+  background: #000000;
+  color: #fff;
 }
 
 .btn {
-  background: #aacf18;
+  background: #000000;
   text-align: center;
   width: 100%;
   display: inline-block;
@@ -162,6 +182,7 @@ input {
 }
 .btn:hover {
   background: #454545;
+  color: #fff;
 }
 
 .errorMessage {
@@ -269,4 +290,8 @@ input[type=number] {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.heading {
+  padding-top: 2%;
 }
