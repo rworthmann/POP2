@@ -32,40 +32,54 @@
 
 <body>
 
+
   <div class="mortgageCalculator">
+    <img class="logo" src="images/ProtegeLogo.jpg">
     <h1>Hybrid Residential Solar System Calculator <i class="fas fa-info-circle"
         title="The Hybrid Residential Solar System Calculator is designed to give users an idea of what a typical solar system will cost. No two houses are the same and there are many variables that need to be accounted for, it is very important for Protégé Power to conduct a site visit for accurate measurements and readings. For larger than 3000kWh/m residential systems or any commercial / industrial systems please contact the office for a free site assessment and quote."></i>
     </h1>
     <form class="formQuestions">
       <h2>Enter your details</h2>
 
-      <div class="question">
-        <label for="consumptionRands">Consumption from amount spent (R) <i class="fas fa-info-circle"
-            title="To calculate your rough average consumption from the amount you spent on electricity per month, enter the Rand value (Incl Vat) per month below and the consumption will automatically be worked out. The calculator uses the average rate of R2,60/kWh."></i></label>
-        <input id="consumptionRands" name="consumptionRands" type="number" step="any" />
-        <input type="hidden" readonly="" name="kwh" id="kwh" value="2.6" class="" />
+      <div class="row">
+
+        <div class="question col-lg-4" style="width: 174px;">
+          <label for="consumptionRands">Average electricity bill per month (R) <i class="fas fa-info-circle"
+              title="To calculate your rough average consumption from the amount you spent on electricity per month, enter the Rand value (Incl Vat) per month below and the consumption will automatically be worked out. The calculator uses the average rate of R2,60/kWh."></i></label>
+          <br />
+          <input id="consumptionRands" name="consumptionRands" type="number" step="any" />
+          <input type="hidden" readonly="" name="kwh" id="kwh" value="2.6" class="" />
+        </div>
+
+        <div class="col-lg-4 optionsplit" style="width: 74px; height: 50px;">
+          <h2>OR</h2>
+        </div>
+
+        <div class="question col-lg-4" style="width: 174px;">
+          <label for="totalKwh">Average electricity consumption per month (kWh) <i class="fas fa-info-circle" title="The Electricity Consumption will determine the size and cost of a solar system, the most accurate way to determine this is to put an energy meter on the house’s main supply to measure the exact figures, especially the peak power drawn.
+          To get a rough estimate of your average electricity usage per month put your monthly electricity bill amount in the calulator, there will be a consumption / usage figure in kWh. (The average usage for a town house is 600kWh and a full title house 1200kWh per month)
+          The calculator uses the average rate of R2.60/kWh)"></i></label>
+          <input type="text" id="totalKwh" name="totalKwh" value="" class="" />
+        </div>
+
       </div>
 
-      <div class="question">
-        <label for="totalKwh">Consumption per month (kWh) <i class="fas fa-info-circle"
-            title="The Electricity Consumption will determine the size and cost of a solar system, the most accurate way to determine this is to put an energy meter on the house’s main supply to measure the exact figures, especially the peak power drawn. To get a rough estimate of your average electricity usage per month take your monthly electricity bill, there will be a consumption / usage figure in kWh. (The average usage for a town house is 600kWh and a full title house 1200kWh per month)"></i></label>
-        <input type="text" id="totalKwh" name="totalKwh" value="" class="" />
-      </div>
 
       <div class="question">
-        <label for="solar">Power from solar (%) <i class="fas fa-info-circle" title="How much of your monthly electricity consumption would you like to be supply from solar panels and how much would you like the grid to supply?"></i></label>
+        <label for="solar">What percentage of your monthly bill do you want to replace with solar? <i class="fas fa-info-circle"
+            title="How much of your monthly electricity consumption would you like to have supplied from solar panels and how much would you like the grid to supply? If you would like to go off the grid, put in 100%. The calculator uses the average Gauteng yearly in-plane irradiation of 2260kWh/m2 with optimal panel angle installation & 25% losses."></i></label>
         <input id="solar" name="solar" type="number" max="100" />
       </div>
 
       <div class="question">
-        <label for="battery">Battery size (%) <i class="fas fa-info-circle"
+        <label for="battery">Battery size: How much of the energy do you want to store? (20% for stage 2 load shedding, 50% most economical, 100% for a rainy week) <i class="fas fa-info-circle"
             title="How much power would you like to have available (stored in a battery) when there is no sun for the panels to produce power? Remember, batteries are not only used to store energy for use in the evening but also when there are power outages / load shedding. For accurate calculations the battery size column must not be less than half the power from solar column."></i></label>
         <input id="battery" name="battery" type="number" max="100" />
       </div>
 
       <div class="question">
-        <label>Solar panel mounting <i class="fas fa-info-circle"
-            title="Solar panels are normally mounted on your house roof. Which direction does your roof face? How is the roof built, i.e. is it a flat tin roof, a pitched tile roof? To check the roof direction, you can open google maps on your smartphone and check which direction the arrow faces in relation to your house."></i></label>
+        <label>Describe the roof type your panels have to be fitted <br />on. <i class="fas fa-info-circle"
+            title="Solar panels are normally mounted on your house roof. Which direction does your roof face? How is the roof built, i.e. is it a flat tin roof, a pitched tile roof? If you have a East West roof orientation uses the Flat roof option. To check the roof direction, you can open google maps on your smartphone and check which direction the arrow faces in relation to your house."></i></label>
         <span class="custom-checkbox first" id="panelNorthFacing">
           <input type="radio" value="0" checked />
           <span class="box">Pitch North Facing</span>
@@ -76,7 +90,7 @@
         </span>
       </div>
 
-      <div class="question">
+      <!-- <div class="question">
         <label for="inverterDistance">Distance from solar panels to Inverter (m) <i class="fas fa-info-circle" title="Remember to consider a cable route here. Hint: the average distance is around 30-40m."></i></label>
         <input id="inverterDistance" name="inverterDistance" type="number" />
       </div>
@@ -85,7 +99,7 @@
         <label for="dbDistance">Distance from Main DB to Inverter (m) <i class="fas fa-info-circle"
             title="Most of our inverters are mounted on the wall, so we can generally install quite close to the main DB. Please try to keep within 5-10m of the DB board."></i></label>
         <input id="dbDistance" name="dbDistance" type="number" />
-      </div>
+      </div> -->
 
       <div class="question">
         <label>DB Split: Essentials & Non Essentials <i class="fas fa-info-circle" title="We strongly recommend splitting your DB board into 2 separate boards:
@@ -106,7 +120,7 @@
 
       <p class="errorMessage"><small>Please ensure all feilds have been completed</small></p>
       <a id="submitCalc" class="btn">
-        <span>Generate Proforma Quotation</span>
+        <span>Generate Estimate</span>
       </a>
 
     </form>
@@ -120,18 +134,21 @@
       </div>
 
       <div class="row">
-        <div class="answer LTVChart col-lg-6">
+        <div class="answer LTVChart col-lg-6" >
           <strong>% Power required from solar:</strong>
           <canvas id="LTVChart"></canvas>
         </div>
 
         <div class="answer LTVChart1 col-lg-6">
-          <strong>% of power stored in battery:</strong>
+          <strong>% Power stored in battery:</strong>
           <canvas id="LTVChart1"></canvas>
         </div>
       </div>
 
       <div class="answer">
+        <div>
+          <h2>Finance option available</h2>
+        </div>
         <div class="half">
           <strong>Monthly Payments (x60) (R):</strong>
           <input type="text" id="monthlyPayment" name="monthlyPayment" readonly="" value="" class="" />
@@ -150,6 +167,8 @@
     </div>
 
   </div>
+
+
 
 </body>
 
