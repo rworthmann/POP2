@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	// ADD COMMAS TO VALUES
-	function numberWithCommas(x) {
-		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-	}
+	// function numberWithCommas(x) {
+	// 	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	// }
 
   // CALCULATE MONTHLY KWH CONSUMPTION
   $(document).ready(function() {
@@ -69,11 +69,12 @@ $(document).ready(function(){
 	// });
 
 $(document).ready(function(){
-	$('#consumptionRands, #solar, #battery, #panelNorthFacing, #panelFlat, #inverterDistance, #dbDistance, #dbSplitYes, #dbSplitNo').bind('click keyup', function(){
+	$('#consumptionRands, #solar, #battery, #panelNorthFacing, #panelFlat, #dbSplitYes, #dbSplitNo').bind('click keyup', function(){
 		var total = $(this).val();
 		if (total == 0 || total == '' ) {
 			total = 0;
 		}
+
 		// consumption
 		// var totalpower = isNaN(parseInt($('#consumptionRands').val() / $("#kwh").val())) ? 0 : ($('#consumptionRands').val() / $("#kwh").val());
 		var totalpower = $('#totalKwh').val() * 1;
@@ -94,10 +95,10 @@ $(document).ready(function(){
       mounting = 3500;
     }
 		// distance from solar panels to inverter
-    var inverterDistance = $("#inverterDistance").val() * 1;
+    var inverterDistance = 30;
 
     //distance from main DB to inverterDistance
-    var dbDistance = $("#dbDistance").val() * 1;
+    var dbDistance = 5;
 		// DB Split yes
     if ($("#dbSplitYes input").is(":checked")) {
       dbSplit = 5750;
@@ -147,9 +148,9 @@ $(document).ready(function(){
 		//generic Qty
 		var genericQty = 1;
 		// cost of mounting (u)
-		var mountingCost = (panelQty * mounting) + (inverterDistance * 100) + (inverterQty * 5000);
+		var mountingCost = (panelQty * mounting) + (30 * 100) + (inverterQty * 5000);
 		// cost of electrical work (v)
-		var electricalCost = dbSplit + (dbDistance * 360) + 2800;
+		var electricalCost = dbSplit + (5 * 360) + 2800;
 		// cost of installation (w)
 		var installationCost = panelQty * 2000;
 		// subtotal
@@ -164,23 +165,24 @@ $(document).ready(function(){
 		var solar10YearCost = totalCost / (panelQty * 14600);
 		// savings over 10 years (y)
 		var savings10Year = (panelQty * 1460 * 52.79) - totalCost;
-		var savings10Yearformatted = "R " + savings10Year.toFixed(2);
+		var savings10Yearformatted = "R " + savings10Year.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
 		var totalCost1 = (totalCost);
-		$("#subTotal").val(subTotal.toFixed(2));
-		$("#vat").val(vat.toFixed(2));
-		$("#totalCost1").val(totalCost1.toFixed(2));
-		$("#monthlyPayment").val(monthlyPayment.toFixed(2));
-		$("#solarCost").val(solar10YearCost.toFixed(2));
-		$("#solarSavings").val(savings10Year.toFixed(2));
+		$("#subTotal").val(subTotal.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}));
+		$("#vat").val(vat.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}));
+		$("#totalCost1").val(totalCost1.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}));
+		$("#monthlyPayment").val(monthlyPayment.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}));
+		$("#solarCost").val(solar10YearCost.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}));
+		$("#solarSavings").val(savings10Year.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}));
 
 		// SET RESULT TEXT BASED ON PERCENT OF SALARY
 		if (savings10Year > 0 )
-			{ $("#howLikely").removeClass("red amber").addClass("green").text("You can save up to " + savings10Yearformatted + " over 10 years") }
+			{ $("#howLikely").removeClass("red amber").addClass("green").text("You can save up to " + savings10Yearformatted + " over 10 years!!") }
 		else if (savings10Year < 0 )
-			{ $("#howLikely").removeClass("green amber").addClass("red").text("These savings are too high") };
+			{ $("#howLikely").removeClass("green amber").addClass("red").text("Please double check your inputs!") };
 
 		// GENERATE DOGNUT CHART //
-		var piedata = [
+
+    var piedata = [
 			{ value: solarchartinverse, color: "#D9D9D9" },
 			{ value: solarchart, color: "#aacf18" }
 		];
@@ -189,7 +191,7 @@ $(document).ready(function(){
 			percentageInnerCutout : 60, // This is 0 for Pie charts
 			animationSteps : 100,
 			animationEasing : "easeOutBounce",
-			animateRotate : true,
+			animateRotate : false,
 			responsive: true,
 			tooltipTemplate: "<%= value %>%"
 		};
@@ -208,7 +210,7 @@ $(document).ready(function(){
 			percentageInnerCutout : 60, // This is 0 for Pie charts
 			animationSteps : 100,
 			animationEasing : "easeOutBounce",
-			animateRotate : true,
+			animateRotate : false,
 			responsive: true,
 			tooltipTemplate: "<%= value %>%"
 		};
@@ -441,3 +443,4 @@ $(document).ready(function(){
 		validateCalc();
 	});
 });
+
