@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blog - Protégé Power</title>
+  <meta name="description" content="Tired of load-shedding? A solar solution can keep your lights on while also subsidising your energy usage,helping you to save.">
+  <meta name="keywords" content="">
+  <!-- <meta name="google-site-verification" content="HMq4A4ENkWSk4x4KeqrnpABccpWLcXlA2Dc6PdU35FI" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/8bf70d463c.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha512-egJ/Y+22P9NQ9aIyVCh0VCOsfydyn8eNmqBy+y2CnJG+fpRIxXMS6jbWP8tVKp0jp+NO5n8WtMUAnNnGoJKi4w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" integrity="sha512-cmWevKhVdrmcSQujnTmu7/vx8+vZHZaB/31156dH0QB456wDedM+ec2tIP36ktso0LoW0IksvbL/5seNqAPvOQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js" integrity="sha512-XYCKHbo5QmBRv8QwuQIlXqemaOB4edxoQO0Io3jZQt9Zarms1O4wMRrkKhx0IZdBneph+oYmKznIOpM3/As3eA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+  <script src="calculator.js"></script>
+  <script src="func.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid-nav fixed-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <img class="logo" src="images/NewLogo3.png">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: #fff;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: #fff;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="solutions.html" style="color: #fff;">Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inverterpackages.html" style="color: #fff;">Inverter Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html" style="color: #fff;">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html" style="color: #fff;">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-form-10/contact.html" style="color: #fff;">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <section class="white-section" id="blog">
+
+    <div id="main">
+      <img class="blog-img" src="images/Solar8.jpg">
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-md-9">
+            <div class="col-md-12 page-body">
+              <div class="row">
+
+                <!-- <div>
+                  <h2 class="section-heading">POPI in the news</h2>
+                </div> -->
+
+                <!-- Blog Post (Right Sidebar) Start -->
+                <div class="row">
+
+                  <div class="col-md-12 content-page">
+
+                    <!-- Blog Post Start -->
+                    <div class="col-md-12 blog-post">
+                      <div class="media">
+                        <!-- <img class="my-pic" src="images/NewLogo3.png"> -->
+                        <div class="media-body">
+                          <div class="post-title">
+                            <a href="blog.html#post12">
+                              <h1>Solar Panels: Which Type Is Right For You?</h1>
+                            </a>
+                          </div>
+                          <div class="post-info">
+                            <span>October 28, 2021 / by info@protegepower.co.za</span>
+                          </div>
+                          <img class="blog10-img" src="images/Mono-Vs-Poly-Solar-Panels.jpg">
+                          <p>See the difference in colour and shape of the PV cells.</p>
+                          <h3><strong>Decisions, decisions...</strong></h3>
+                          <p>When installing a solar system, you need to do a lot of homework. One of the more confusing questions is “what panels should I install?”. In this article we break down the difference between the 2 major types of solar
+                            panels: Monocrystalline and Polycrystalline.
+                            Both are installed on your roof, both generate electricity using the suns energy, and both will save you money. The difference is mainly efficiency.<br />
+                            <br />
+                            We’re going to break it down by looking at the similarities and differences between the two types of panels. Going over cost, efficiency, aesthetics and more to make your decision easier.
+                          </p>
+                          <br />
+                          <h3><strong>What are monocrystalline and polycrystalline solar panels?</strong></h3>
+                          <p>
+                            Monocrystalline and polycrystalline solar panels are the two most common types of solar energy receptors. Both work using photovoltaic cells made of silicon. The difference between the two types of solar cells is the
+                            configuration of the silicon:
+                          <ul>
+                            <li><strong>Polycrystalline solar panels:</strong> Each PV cell is made of multiple silicon crystal fragments that are melded together during manufacturing. You may see them called “multi-crystalline panels” or “poly
+                              panels.”</li>
+                            <li><strong>Monocrystalline solar panels:</strong> Each solar PV cell is made of a single silicon crystal. These are sometimes referred to as “mono solar panels.”</li>
+                          </ul>
+                          <p>
+                            Both types of solar panels have the same purpose: converting sunlight into electricity. However, the crystalline silicon structure of individual solar cells affects their performance and appearance. In fact, you can
+                            identify the type of panel by simply looking at the shape and color of its solar cells.
+                          </p>
+                          </p>
+                          <br />
+                          <h3><strong>Polycrystalline solar panels:</strong></h3>
+                          <p>
+                            Polycrystalline panels have PV cells with a blue hue and straight edges. Poly panels are less efficient than mono panels, reducing the output power per panel. This means you will need more panels to reach the same amount
+                            of power as a mono PV array. However, poly panels are cheaper than mono because of the simpler manufacturing process.<br />
+                            <br />
+                            Poly panels are very durable, however they don’t last as long as mono panels. Furthermore, higher temperatures affect poly panels more than mono panels, reducing the output on hot days.
+                          </p>
+                          <br />
+                          <h3><strong>Monocrystalline solar panels:</strong></h3>
+                          <p>
+                            Monocrystalline panels have black PV cells with rounded edges. They are more efficient than poly panels, which means they produce more kilowatt-hours of electricity. That’s why mono solar panels are the better choice for
+                            an installation with limited space and early shading.<br />
+                            <br />
+                            While mono panels are the most efficient option, they are also more costly, because of the more complex manufacturing process.
+                          </p>
+                          <br />
+                          <h3><strong>What Are The Main Differences:</strong></h3>
+                          <p>
+                            Now that you know the basics of the two types of panels, lets look at some of the key differences. The following table summarizes the key factors when we compare the two:
+                          </p>
+                          <div class="container-table">
+                            <div class="row-table">
+                              <div class="col-md-10 price-table" style="max-width: 100%;">
+                                <div class="row-table">
+                                  <div class="col-lg-12">
+                                    <div class="table-responsive">
+                                      <table class="table table-bordered table-hover responsive-table">
+                                        <thead class="thead-inverse">
+                                          <tr>
+                                            <th class="" style="background-color: #000; color: #fff;">Factors</th>
+                                            <th class="" style="background-color: #000; color: #fff;">Mono Panels</th>
+                                            <th class="" style="background-color: #000; color: #fff;">Poly Panels</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="option">Silicone Arrangement</td>
+                                            <td class="">One pure silicon crystal</td>
+                                            <td class="">Multiple silicon fragments melded together</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="option">Cost</td>
+                                            <td>More expensive</td>
+                                            <td>Less expensive</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="option">Appearance</td>
+                                            <td>Black cells</td>
+                                            <td>Blue cells</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="option">Efficiency</td>
+                                            <td>More efficient</td>
+                                            <td>Less efficient</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="option">Lifespan</td>
+                                            <td>25-30 years</td>
+                                            <td>15-20 years</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="option">Temperature Coefficient</td>
+                                            <td>Lower temperature coefficient, making them more efficient in heat</td>
+                                            <td>Higher temperature coefficient, making them less efficient in heat</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <br />
+                          <h3><strong>Solar Panel Cost:</strong></h3>
+                          <p>
+                            The silicon structure of the solar panel is the main factor that determines the cost. When producing polycrystalline panels, manufacturers simply need to pour molten silicon into moulds. Thereafter, the resulting wafers are cut into cells. On the other hand, the solidification of mono cells needs to be carefully controlled. Thus increasing the cost per panel.<br />
+                            <br />
+                            Here are a few factors to think of when looking at the cost of panels:
+                            <ul>
+                              <li>Mono panels are only more expensive when comparing just the panels.</li>
+                              <li>The rest of the equipment, including the installation of the system will be the same.</li>
+                              <li>The higher efficiency and longer lifespan of mono panels can lead to a better return on investment.</li>
+                              <li>Both mono and poly panels will save you money when correctly specified and installed.</li>
+                            </ul>
+                          </p>
+                          <br />
+                          <h3><strong>Efficiency and Temperature Coefficient</strong></h3>
+                          <p>
+                            As we mentioned previously, mono panels are more efficient. However, poly panels are not inferior products. Most manufacturers make top-quality solar panels of both types. Here is a bit more information on efficiency.
+                            <ul>
+                              <li>A solar panel with higher efficiency converts more sunlight into electricity.</li>
+                              <li>Polycrystalline panels usually have efficiency ratings of less than 20%, while monocrystalline panels are getting closer to 23%.</li>
+                              <li>It takes more polycrystalline panels to reach a certain kilowatt-hour rating per month due to their lower efficiency.</li>
+                              <li>All panels are less efficient when their temperature rises, but mono panels are less affected by heat.</li>
+                            </ul>
+                          </p>
+                          <p>
+                            The temperature coefficient tells us how temperature affects a panel. Therefore, all tier 1 solar panels are tested under the same conditions to ensure a fair comparison.<br />
+                            <br />
+                            Generally speaking, polycrystalline solar panels have higher temperature coefficients. Because of this, they lose more efficiency as they heat up. However, improvements in solar panel technology have lead to both types of solar panels having similar temperature coefficients.<br />
+                            <br />
+                            Solar panel efficiency is not very important when you have a lot of space available. Because of the lower price, it is sometimes more viable to install more of them to make up for the lower efficiency. However, when space is limited and installing more solar panels is not an option, mono solar panels are the better option to produce the needed electricity.
+                          </p>
+                          <br />
+                          <h3><strong>Appearance and Lifespan</strong></h3>
+                          <p>
+                            The appearance of solar panels is a result of the silicon structure of their cells, since it affects how they interact with sunlight and how they are perceived by the human eye. The single crystal structure of monocrystalline cells makes them black, while polycrystalline cells are blue.<br />
+                            <br />
+                            Both solar panel types have a long lifespan, while their break even point can be less than 5 years if they are correctly installed. Most solar panel brands give a 25 year power production warranty. However, some brands – like Longi, offer a 30 year power production warranty.
+                          </p>
+                          <br />
+                          <h3><strong>Are Monocrystalline or Polycrystalline Solar Panels Best for You?</strong></h3>
+                          <p>
+                            Each type of solar panel has it’s advantages and disadvantages, and you can both can save you money. But, to make your decision easier, think of the following factors when choosing the right solar panels for you:
+                          </p>
+                          <h5><strong>Aesthetics:</strong></h5>
+                          <p>
+                            How important are aesthetics to you? The black colour of the mono solar panel tends to look more modern than the blue poly solar panel.
+                          </p>
+                          <h5><strong>Space:</strong></h5>
+                          <p>
+                            The exact dimensions of solar panels varies from brand to brand. That being said, most panels are around 2mx1m. A mono panel will give you more watts per square meter.<br />
+                            <br />
+                            As an example, a polycrastalline panel may generate 300 watts, while a monocrystalline of the same size may generate 350w. On that basis, if you install 20 solar panels, you could generate 7kw with monocrystalline but only 6kw with polycrystalline.
+                          </p>
+                          <h5><strong>Budget:</strong></h5>
+                          <p>
+                            Budget is only a small factor when it comes deciding which type of solar panel suits you best. While polycrystalline panels are cheaper, mono panels make up for the price difference by giving you more watts. You may find that a system made up of mono panels could cost less than a system made up of poly panels.
+                          </p>
+                          <br />
+                          <h3><strong>Final Decision:</strong></h3>
+                          <p>
+                            The best way to see which solar panel is suits your needs is to speak to one of our sales consultants and arrange a site survey. We conduct totally free site surveys to design a system that meets your unique needs and budget. You could also get an obligation free estimate on our <a href="index.html#calculator">home page cost calculator</a>.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
