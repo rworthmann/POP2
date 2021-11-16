@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blog - Protégé Power</title>
+  <meta name="description" content="Tired of load-shedding? A solar solution can keep your lights on while also subsidising your energy usage,helping you to save.">
+  <meta name="keywords" content="">
+  <!-- <meta name="google-site-verification" content="HMq4A4ENkWSk4x4KeqrnpABccpWLcXlA2Dc6PdU35FI" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/8bf70d463c.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha512-egJ/Y+22P9NQ9aIyVCh0VCOsfydyn8eNmqBy+y2CnJG+fpRIxXMS6jbWP8tVKp0jp+NO5n8WtMUAnNnGoJKi4w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" integrity="sha512-cmWevKhVdrmcSQujnTmu7/vx8+vZHZaB/31156dH0QB456wDedM+ec2tIP36ktso0LoW0IksvbL/5seNqAPvOQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js" integrity="sha512-XYCKHbo5QmBRv8QwuQIlXqemaOB4edxoQO0Io3jZQt9Zarms1O4wMRrkKhx0IZdBneph+oYmKznIOpM3/As3eA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+  <script src="calculator.js"></script>
+  <script src="func.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid-nav fixed-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img class="logo" src="images/NewLogo4.png">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: #fff;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: #fff;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="solutions.html" style="color: #fff;">Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inverterpackages.html" style="color: #fff;">Inverter Packages</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="portfolio.html" style="color: #fff;">Portfolio</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html" style="color: #fff;">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-form-10/contact.html" style="color: #fff;">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <section class="white-section" id="blog">
+
+    <div id="main">
+      <img class="blog-img" src="images/Solar8.jpg">
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-md-9">
+            <div class="col-md-12 page-body">
+              <div class="row">
+
+                <!-- <div>
+                  <h2 class="section-heading">POPI in the news</h2>
+                </div> -->
+
+                <!-- Blog Post (Right Sidebar) Start -->
+                <div class="row">
+
+                  <div class="col-md-12 content-page">
+
+                    <!-- Blog Post Start -->
+                    <div class="col-md-12 blog-post">
+                      <div class="media">
+                        <!-- <img class="my-pic" src="images/NewLogo3.png"> -->
+                        <div class="media-body">
+                          <div class="post-title">
+                            <a href="blog-post9.html">
+                              <h1>How many peak sun hours does a solar system need?</h1>
+                            </a>
+                          </div>
+                          <div class="post-info">
+                            <span>September 22, 2020 / by info@protegepower.co.za</span>
+                          </div>
+                          <img class="blog10-img" src="images/Sun-Energy-scaled.jpg">
+                          <h3><strong>Solar In South Africa.</strong></h3>
+                          <p>Being in sunny South Africa, we have more than enough hours of sunlight annually to make a solar system worthwhile. Coupled with the fact that we also have load shedding and drastically increasing eskom tariffs, it may seem silly not to have a solar system. But how many hours of sun is enough to make an actual difference? Well that depends on a few factors. Such as the peak sun hours for your area, the hours of sunlight per day and the position of your panels.<br />
+                          </p>
+                          <br />
+                          <h3><strong>What are peak sun hours?</strong></h3>
+                          <p>
+                            The term “peak sun hours” refers to an hour of sunlight that reaches about 1000W of energy per meter squared. Generally, areas closer to the equator would see more peak sun hours. With Pretoria being only 2800km from the equator we would in theory have more peak hours than Denmark, which is more than 6200km from the equator. This is mostly because of the angle of incidence – the angle of the sun in relation to the horizon. With a greater angle of incidence, the sun’s rays cover a smaller surface area with the same amount of energy. Thus increasing the amount of energy per m². This is also why the sun is more intense during summer than it is in winter.
+                          </p>
+                          <br />
+                          <h3><strong>How many peak sun hours can we expect?</strong></h3>
+                          <p>
+                            Depending on the month of the year, Pretoria can expect a peak of approximately 7kwh per square meter per day. While Cape Town can expect a peak of approximately 8kwh per square meter per day. The difference is the longer summer days in Cape Town.
+                          </p>
+                          <img class="blog10-img" src="images/Bargraph.jpg">
+                          <p>
+                            A bar graph from <a href="https://www.researchgate.net/figure/Monthly-average-solar-irradiation-at-the-regions-of-Pretoria-and-Cape-Town-data-from_fig3_254409850">ResearchGate</a> depicting the amount of peak hours in Pretoria vs Cape Town.
+                          </p>
+                          <br />
+                          <h3><strong>Positioning your panels for maximum sunlight.</strong></h3>
+                          <p>
+                            Positioning solar panels is often a challenge. A few of the most common obstacles we come across are roof space, roof direction and angle, and shadows. We generally want the solar panels to face north, being south of the equator that is the direction we get the least amount of shadows from. Unfortunately with solar energy being a relatively new concept to the South African residential market, many houses were not built with this in mind. This is easy to fix though. Most inverters on the market today can accommodate more than one solar string. This means that we can split the total amount of panels into multiple circuits to take advantage of all angles of sunlight. While roof angle is also not a huge factor, it is also something to consider. Angled brackets are available for flat roofs, enabling you to install the panels at a 30° angle.
+                          </p>
+                          <img class="blog10-img" src="images/Canadian-Solar-Ku-36KW.jpeg">
+                          <p>
+                            30° Angled aluminium brackets to more efficiently harness sunlight energy.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

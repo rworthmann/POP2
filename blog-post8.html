@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blog - Protégé Power</title>
+  <meta name="description" content="Tired of load-shedding? A solar solution can keep your lights on while also subsidising your energy usage,helping you to save.">
+  <meta name="keywords" content="">
+  <!-- <meta name="google-site-verification" content="HMq4A4ENkWSk4x4KeqrnpABccpWLcXlA2Dc6PdU35FI" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/8bf70d463c.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha512-egJ/Y+22P9NQ9aIyVCh0VCOsfydyn8eNmqBy+y2CnJG+fpRIxXMS6jbWP8tVKp0jp+NO5n8WtMUAnNnGoJKi4w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" integrity="sha512-cmWevKhVdrmcSQujnTmu7/vx8+vZHZaB/31156dH0QB456wDedM+ec2tIP36ktso0LoW0IksvbL/5seNqAPvOQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js" integrity="sha512-XYCKHbo5QmBRv8QwuQIlXqemaOB4edxoQO0Io3jZQt9Zarms1O4wMRrkKhx0IZdBneph+oYmKznIOpM3/As3eA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+  <script src="calculator.js"></script>
+  <script src="func.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid-nav fixed-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img class="logo" src="images/NewLogo4.png">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: #fff;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: #fff;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="solutions.html" style="color: #fff;">Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inverterpackages.html" style="color: #fff;">Inverter Packages</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="portfolio.html" style="color: #fff;">Portfolio</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html" style="color: #fff;">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-form-10/contact.html" style="color: #fff;">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <section class="white-section" id="blog">
+
+    <div id="main">
+      <img class="blog-img" src="images/Solar8.jpg">
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-md-9">
+            <div class="col-md-12 page-body">
+              <div class="row">
+
+                <!-- <div>
+                  <h2 class="section-heading">POPI in the news</h2>
+                </div> -->
+
+                <!-- Blog Post (Right Sidebar) Start -->
+                <div class="row">
+
+                  <div class="col-md-12 content-page">
+
+                    <!-- Blog Post Start -->
+                    <div class="col-md-12 blog-post">
+                      <div class="media">
+                        <!-- <img class="my-pic" src="images/NewLogo3.png"> -->
+                        <div class="media-body">
+                          <div class="post-title">
+                            <a href="blog-post8.html">
+                              <h1>Lithium Ion batteries. The best energy storage option.</h1>
+                            </a>
+                          </div>
+                          <div class="post-info">
+                            <span>September 15, 2020 / by info@protegepower.co.za</span>
+                          </div>
+                          <img class="blog10-img" src="images/LeadAcid-vs-Lithium.jpg">
+                          <h3><strong>Solar Power</strong></h3>
+                          <p>With ever increasing electricity tariffs and the harsh effect that electricity generation has on the planet, it is no wonder so many people are talking about solar energy. Solar panels generate electricity by using the sun, this energy is then sent through an inverter to convert it to usable power. But what about night time and cloudy days? Well that’s why we have batteries.
+                          </p>
+                          <br />
+                          <h3><strong>Batteries</strong></h3>
+                          <p>
+                            Most solar systems consist of 3 main components: panels, an inverter, and a battery bank. Depending on your budget and needs, there are multiple types of batteries to choose from. However, the most commonly used are lead-acid and Lithium-Ion. As with everything, both have their pros and cons. So lets have a look at the key differences between the 2 types of technology.
+                          </p>
+                          <img class="blog10-img" src="images/US3000.jpg">
+                          <p>
+                            Pylontech US3000-B
+                          </p>
+                          <h5><strong>1. Cycle life</strong></h5>
+                          <p>
+                            Battery lifespan is measured in two ways, time and charge cycles. When you discharge your batteries, then charge them back up, that is referred to as a charge cycle. Think of it like mileage on a car. When you look at buying a used car, the amount of kilometres is far more important than than the year it was produced.<br />
+                            <br />
+                            The same applies to batteries and the number of cycles they have completed. For instance, a battery at a holiday home may go through 100 cycles in 4 years, whereas the same battery could go through 300+ cycles at a permanent home. The one that has gone through 100 cycles in 4 years would obviously last longer.<br />
+                            <br />
+                            Lithium Ion batteries have a much better cycle life than lead acid batteries, and can therefore last much longer.
+                          </p>
+                          <br />
+                          <h5><strong>2. Depth of Discharge</strong></h5>
+                          <p>
+                            Depth of discharge refers to how much capacity can be used before the battery needs to be recharged. For instance, if you use a quarter of your battery capacity, the depth of discharge would be 25%.<br />
+                            <br />
+                            Batteries cannot be fully discharged. Instead, we work on a recommended depth of discharge. Basically, how much energy you can use out of the battery before it needs to be recharged.<br />
+                            <br />
+                            Lead acid batteries have a relatively low depth of discharge at only 50%. Discharging a battery any further than that will negatively affect the lifespan of the battery. If you were to discharge a lead acid battery to 50% capacity and then recharge it, that would count as 1 cycle.<br />
+                            <br />
+                            However, lithium ion batteries have a depth of discharge of 80% or even more. Essentially, they have a much higher usable capacity.
+                          </p>
+                          <br />
+                          <h5><strong>3. Efficiency</strong></h5>
+                          <p>
+                            The efficiency of a battery refers to the amount of power your battery can store and use. Lithium Ion batteries are far more efficient than lead acid. Meaning that more of your solar power is stored and usable.<br />
+                            <br />
+                            Most lead acid batteries have an efficiency rating of 80-85%. That means that if you have 1000 watts of solar power coming into the battery, there will only be 800-850w available after the charging and discharging process.<br />
+                            <br />
+                            Lithium Ion batteries generally have an efficiency rating of about 95%, meaning that you would have 950 watts of power available.<br />
+                            <br />
+                            Higher efficiency means that your batteries will charge faster, and depending on your set up, you may also be able to get away with using less panels and a smaller battery bank.
+                          </p>
+                          <br />
+                          <h5><strong>4. Charge Rate</strong></h5>
+                          <p>
+                            Due to the higher efficiency, lithium Ion batteries charge faster. This is because they can handle more current from the charger. This is a major benefit when you have load shedding twice a day, which is not far fetched.<br />
+                            <br />
+                            Lead acid batteries are drastically limited in how much charge current they can handle. This is mainly because they can easily overheat, causing damage to the battery and possibly starting a fire. Furthermore, the charge rate slows down significantly as you approach full charge.<br />
+                            <br />
+                            Lead acid batteries often take twice the amount of time to charge as lithium ion.<br />
+                          </p>
+                          <br />
+                          <h5><strong>5. Energy Density</strong></h5>
+                          <p>
+                            Energy density essentially refers to how much energy a battery can store in relation to its weight and physical size.<br />
+                            <br />
+                            For example, the Pylontech US-3000 B is 442X420X132mm in size and has an energy capacity of 3.5kwh. Whereas the average lead acid battery is about 330x177x220mm in size and only has an energy rating of 1.2kwh. This means you would need 4 lead acid batteries to match the power of 1 lithium ion.<br />
+                            <br />
+                            Essentially, a lead acid battery bank would take up substantially more space than a lithium ion bank of the same power rating. We haven’t even accounted for the losses due to efficiency and depth of discharge.<br />
+                            <br />
+                            Apart from the obvious pros of the lithium ion battery, the more intelligent technology in lithium batteries also allows for more efficient usage. With smart hybrid inverters, the system communicates directly with the battery to determine state of charge, depth of discharge and many other parameters. This makes the system adaptable to your unique needs.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

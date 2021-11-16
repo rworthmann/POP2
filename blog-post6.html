@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blog - Protégé Power</title>
+  <meta name="description" content="Tired of load-shedding? A solar solution can keep your lights on while also subsidising your energy usage,helping you to save.">
+  <meta name="keywords" content="">
+  <!-- <meta name="google-site-verification" content="HMq4A4ENkWSk4x4KeqrnpABccpWLcXlA2Dc6PdU35FI" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/8bf70d463c.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha512-egJ/Y+22P9NQ9aIyVCh0VCOsfydyn8eNmqBy+y2CnJG+fpRIxXMS6jbWP8tVKp0jp+NO5n8WtMUAnNnGoJKi4w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" integrity="sha512-cmWevKhVdrmcSQujnTmu7/vx8+vZHZaB/31156dH0QB456wDedM+ec2tIP36ktso0LoW0IksvbL/5seNqAPvOQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js" integrity="sha512-XYCKHbo5QmBRv8QwuQIlXqemaOB4edxoQO0Io3jZQt9Zarms1O4wMRrkKhx0IZdBneph+oYmKznIOpM3/As3eA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+  <script src="calculator.js"></script>
+  <script src="func.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid-nav fixed-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img class="logo" src="images/NewLogo4.png">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: #fff;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: #fff;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="solutions.html" style="color: #fff;">Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inverterpackages.html" style="color: #fff;">Inverter Packages</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="portfolio.html" style="color: #fff;">Portfolio</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html" style="color: #fff;">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-form-10/contact.html" style="color: #fff;">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <section class="white-section" id="blog">
+
+    <div id="main">
+      <img class="blog-img" src="images/Solar8.jpg">
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-md-9">
+            <div class="col-md-12 page-body">
+              <div class="row">
+
+                <!-- <div>
+                  <h2 class="section-heading">POPI in the news</h2>
+                </div> -->
+
+                <!-- Blog Post (Right Sidebar) Start -->
+                <div class="row">
+
+                  <div class="col-md-12 content-page">
+
+                    <!-- Blog Post Start -->
+                    <div class="col-md-12 blog-post">
+                      <div class="media">
+                        <!-- <img class="my-pic" src="images/NewLogo3.png"> -->
+                        <div class="media-body">
+                          <div class="post-title">
+                            <a href="blog-post6.html">
+                              <h1>Do your bit to save the planet.</h1>
+                            </a>
+                            <h1>Solar Energy can help us save the planet</h1>
+                          </div>
+                          <div class="post-info">
+                            <span>July 28, 2020 / by info@protegepower.co.za</span>
+                          </div>
+                          <p>
+                            Solar energy can help you contribute to a greener, healthier planet. With an exponentially growing global population, we need more resources. We need more energy, we need more water, we need more food. While water and food are finite, energy is not. Depending on how we convert energy to usable electricity, we could essentially have free, clean energy. The solution lies in solar. Solar is helpful to the environment in more ways than one.
+                          </p>
+                          <img class="blog10-img" src="images/Air-Pollution-scaled.jpg">
+                          <p>
+                            Conventional energy production methods emit harmful gasses.
+                          </p>
+                          <br />
+                          <h3><strong>1.Solar energy uses less water</strong></h3>
+                          <p>Water is one of our most precious natural resources. South Africa is no stranger to drought. Since 2018 and even before, we have been in a serious drought. Power stations use a lot of water for various steps of the process. Water is used for cooling generators, processing and refining fuel and transporting fuel through pipes. However, generating electricity through solar power requires no water at all. Although it is necessary to clean the panels every now and then.
+                          </p>
+                          <br />
+                          <h3><strong>2.Reducing air pollution</strong></h3>
+                          <p>
+                            Have you ever had a look at a coal power station and notices the stacks of steam and smoke billowing out of the cooling towers? That all needs to go somewhere. It sits in the atmosphere reducing the quality of the air we breathe, and the water we drink. Furthermore, air pollution has been linked to serious medical conditions such as asthma, allergies, bronchitis, pneumonia, headaches, anxiety, heart attacks and even some cancers. If we all played our part in creating a greener environment, we could substantially lower the risks of these conditions.<br />
+                          </p>
+                          <br />
+                            <h3><strong>3.Solar energy can help to slow climate change</strong></h3>
+                          <p>
+                            The release of toxic gases into the atmosphere, such as carbon dioxide, methane and nitrous oxide, doesn’t just contribute to air pollution, but also contributes to the enhanced greenhouse effect. While the greenhouse effect is a natural process that warms the Earth’s surface to a liveable temperature, human activities, such as the burning of fossil fuels, have increased the amount of greenhouse gases in our atmosphere. This has led to the enhanced greenhouse effect, which is warming our earth faster than ever before. In recent years, this has been linked to a number of catastrophic weather events, such as flooding, cyclones, storms, extreme heat and drought. Generating electricity from solar panels does not produce any greenhouse gasses, reducing the impact you have on the environment. <br />
+                          </p>
+                          <br />
+                          <h3><strong>4.Reducing our reliance on fossil fuels</strong></h3>
+                          <p>
+                            The sun’s energy is infinite. If we could harness all of the sunlight shining on the earth for just one hour, we could power the entire planet for an entire year. The sun’s rays are free, and plenty. Unlike fossil fuels which are rapidly depleting. Switching from fossil fuels to solar energy could mean lower energy costs, less emissions, and ultimately a healthier planet. We all have the responsibility to do what we can to look after our planet.<br />
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
