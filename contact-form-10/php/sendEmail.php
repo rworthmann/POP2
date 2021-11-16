@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$to = 'ruwald.worthmann@gmail.com';
+$to = 'info@protegepower.co.za';
 
 function url(){
   return sprintf(
